@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@master
     
     - name: Run Script
-      run: echo Hello, try Swift!
+      run: echo Hello, try Swift!!
