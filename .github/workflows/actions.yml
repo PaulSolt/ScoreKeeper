@@ -12,3 +12,13 @@ jobs:
     
     - name: Run Script
       run: echo Hello, try Swift!!
+
+  lint:
+    name: SwiftLint
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@master
+      run: |
+        brew install swiftlint
+        swiftlint autocorrect
+        echo Linting done!
