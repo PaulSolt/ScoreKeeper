@@ -26,6 +26,7 @@ jobs:
     - uses: actions/checkout@master
     
     - name: Install Swiftlint
+      id: swiftlint
       run: |
         brew install swiftlint
         swiftlint autocorrect
