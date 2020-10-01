@@ -46,7 +46,7 @@ jobs:
       run: sudo xcode-select --switch /Applications/Xcode_12.app
       
     - name: Run tests
-      run xcodebuild -scheme "ScoreKeeper" -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=14.0' test
+      run: xcodebuild -scheme "ScoreKeeper" -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=14.0' test
   
     
     
